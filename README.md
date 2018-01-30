@@ -10,9 +10,9 @@ Insights from EDA:
   2. 
   3. 
   
-Then, data are subsetted based on page and time. After, feature engineering is conducted to extract features in order to cluster users into different groups regarding their active level. 
+Then, data are subsetted based on page and time. After, feature engineering is conducted to extract features in order to cluster users into different groups. The primary aim for clustering is to identify superfans who are actively engaged on the page.  
 
-The main features considered are thirteen. They account both features on each engagment type for the number of people connected to the first two pools used by each user and for the time elapsed between the first two payments and the first two invitations (sent or received) by each user. The idea behind the computation of these features is that:
+The main features considered are thirteen. They account both features for each type of engagment and features for the interrelationship between different types of engagements. For example, posts that are shared involved users "shared by" and "shared to". A network analysis is conducted to extract centrality measures, out-degree, closeness, authority, and hub, to measure users' performance in the sharing network. 
 
 Engaged customers contribute to pools that are linked to more people respect to unengaged users (network effect). See Fig3.png, Fig4.png
 Engaged customers use the product more frequently than unengaged users. This different behavior is already present from their first uses of the product. See Fig7.png
