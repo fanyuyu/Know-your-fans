@@ -10,28 +10,16 @@ Insights from EDA:
   2. 
   3. 
   
-Then, data are subsetted based on page and time. After, feature engineering is conducted to extract features in order to cluster users into different groups. The primary aim for clustering is to identify superfans who are actively engaged on the page.  
+Second, data are subsetted based on page and time. 
+
+Then, feature engineering is conducted to extract features in order to cluster users into different groups. The primary aim for clustering is to identify superfans who are actively engaged on the page.  
 
 The main features considered are thirteen. They account both features for each type of engagment and features for the interrelationship between different types of engagements. For example, posts that are shared involved users "shared by" and "shared to". A network analysis is conducted to extract centrality measures, out-degree, closeness, authority, and hub, to measure users' performance in the sharing network. 
 
-Engaged customers contribute to pools that are linked to more people respect to unengaged users (network effect). See Fig3.png, Fig4.png
-Engaged customers use the product more frequently than unengaged users. This different behavior is already present from their first uses of the product. See Fig7.png
+
 Main files:
 
-main.py: Main, interactive file to run the pipeline in python3. It calls subroutines in two files (alldata.py and random_forest.py). These files are used to load, merge and analyze four datasets, and to compute predictions using a Random Forest Classifier (using scikit-learn).
+main.py: the main function to call subroutines to run the pipeline in python2.7. The pipeline, including data subsetting, date merge, feature engineering, and clustering on three datesets, is automated for each page.  
 
-alldata.py: This file contains three subroutines (merge_data, add_features, make_labels).
-
-merge_data: subroutine to merge data for user IDs, invitations and payments
-add_features: subroutine to compute new features from the early activity of each user
-make_labels: subroutine to label all data and output final dataset to be used for Machine Learning predictions
-ml_algo.py: This file computes predictions using a Random Forest Classifier, together with multiple summary statisitics such as accuracy, precision, recall, F1 score, etc...
-Figures:
-
-Fig1.png Figure showing the basic mechanism to create and contribute to a given pool
-
-Fig3.png Figure showing a crowded pool: the number of IDs connected to a pool can be used as an indicator of engagement
-
-Fig4.png Figure showing a pool with few users connected: again, the number of IDs connected to a pool can be used as an indicator of engagement
-
-Fig7.png Figure showing "temporal clustering". Ada contributed to 2 pools in a shorter amount of time respec to Tom: She has a higher chance of becoming an engaged user
+feature_engineering.py:subroutine to conduct feature engineering. 
+XXXXX
