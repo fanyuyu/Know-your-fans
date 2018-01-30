@@ -1,10 +1,18 @@
 # Know-your-fans
 
-Pipeline to understand users' engagments on Facebook pages of large media company and to identify superfans. The company has more than 20 facebook pages, and these pages are mainly for shows or networks. 
+Pipeline to understand users' engagments on Facebook pages of large media company and to identify superfans. The company has more than 20 facebook pages, and these pages are mainly for shows or networks. There are three types of user engagements recorded: like a post, comment on a post, and share a post.  
 
-The datasets include user IDs, and their activity as a function of time, such as their invitations (sent and received), their payments, and the pools used. This dataset is used to label users as engaged vs non-engaged customers and to perform feature engineering.
+The datasets include user IDs, page IDs, and post IDs, and their engagements on the posts. Specifically, data contains information on whether a user liked/commented/shared a post on a page, and if so, the timestamp of the engagment. 
 
-The main features considered are thirteen. They account both for the number of people connected to the first two pools used by each user and for the time elapsed between the first two payments and the first two invitations (sent or received) by each user. The idea behind the computation of these features is that:
+First, EDA is performed to understand users' engagments on the page, post, and user levels. 
+Insights from EDA:
+  1. 
+  2. 
+  3. 
+  
+Then, data are subsetted based on page and time. After, feature engineering is conducted to extract features in order to cluster users into different groups regarding their active level. 
+
+The main features considered are thirteen. They account both features on each engagment type for the number of people connected to the first two pools used by each user and for the time elapsed between the first two payments and the first two invitations (sent or received) by each user. The idea behind the computation of these features is that:
 
 Engaged customers contribute to pools that are linked to more people respect to unengaged users (network effect). See Fig3.png, Fig4.png
 Engaged customers use the product more frequently than unengaged users. This different behavior is already present from their first uses of the product. See Fig7.png
