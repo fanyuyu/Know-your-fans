@@ -1,3 +1,17 @@
+
+import pandas as pd
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+sns.set() 
+import plotly.offline as py
+py.init_notebook_mode(connected=True)
+import plotly.graph_objs as go
+import plotly.tools as tls
+
+
 ########## step1: subset data by page and week ########## 
 # define a function to caculate the counts for each section in the venn diagram
 def venn_counts(b):
