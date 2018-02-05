@@ -5,9 +5,9 @@
 The goal of this project is to understand users' engagement on Facebook pages of a large media company and to identify superfans. The company has more than 30 Facebook channel pages, which are mainly for shows or networks. 
 
 There are three types of user engagements recorded: 
-* like a post
-* comment on a post
-* share a post
+* Like a post
+* Comment on a post
+* Share a post
 
 Besides, below are some basic information about the dataset:
 * The number of posts on each pages varies from 1 to more than 500.
@@ -21,7 +21,7 @@ EDA was performed to understand users' engagement on the page, post, and user le
 Below are some insights from EDA:
 1. Some pages are much more popular. They had more than 10,000+ engaged users in one month.
 2. Majority of the users' engagement type is “like”, especially for the most popular pages.
-3. There are a small proportion of users who had more than one type of engagements for each page.
+3. There are a small proportion of users who had more than one type of engagement for each page.
 4. There are an even smaller proportion of users who engaged across pages.
 
 ## Dataset Preprocessing
@@ -30,11 +30,8 @@ Data were subsetted based on page and time. The identification of superfans were
 
 ## Feature Engineering
 
-Feature engineering was conducted to extract features in order to cluster users into different groups regarding their engagement pattern and active level. 13 features were considered for clustering analysis. They account both features for each type of engagement and features for the interrelationship between different types of engagements. For example, posts that are shared involved users "shared by" and "shared to". 
-
-## Network Analysis
-
-A network analysis was conducted to extract centrality measures, out-degree, closeness, authority, and hub, to measure users' performance in the sharing network.
+Feature engineering was conducted to extract features in order to cluster users into different groups regarding their engagement pattern and active level. 13 features were considered for clustering analysis. They account both features for each type of engagement and features for the interrelationship between different types of engagements. 
+For example, since posts that were shared involved users "shared by" and "shared to", *network analysis* was conducted to extract centrality measures, out-degree, closeness, authority, and hub, to measure users' performance in the sharing network.
 
 ## Clustering Analysis (using K-means and Gaussian Mixture)
 
