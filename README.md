@@ -46,6 +46,15 @@ The selected algorithm were applied on the validation set, and results showed th
 PCA was used to reduce the dimension of the feature matrix and the clusters were plotted against the first two dimensions of the projection matrix.
 
 
-## Main files:
+## Implementation
+Libraries used:
+* python 2.7
+* pandas (to interact with dataset)
+* numpy (for scientific computing)
+* networkx (for generating network graph)
+* plotly (for interactive visualization)
 
-main.py: the main function to call subroutines to run the pipeline in python2.7. The pipeline, including data subsetting, date merge, feature engineering, and clustering on three datesets, is automated for each page.
+
+The _main.py_ file contains the main function to call subroutines to run the pipeline in python2.7. 
+
+The pipeline, including data subsetting, date merge, feature engineering, and clustering on three datesets, is automated for each page.
