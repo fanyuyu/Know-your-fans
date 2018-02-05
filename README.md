@@ -49,9 +49,10 @@ Libraries used:
 * pandas (to interact with dataset)
 * numpy (for scientific computing)
 * networkx (for generating network graph)
+* sklearn (for kmeans, Gaussian mixture, PCA)
 * plotly (for interactive visualization)
 
 
-The _main.py_ file contains the main function to call subroutines to run the pipeline in python2.7. 
+The files contains the main functions to call subroutines to run the pipeline in python2.7. 
 
-The pipeline, including data subsetting, date merge, feature engineering, and clustering on three datesets, is automated for each page.
+The pipeline, including data cleaning, merge, subsetting, feature engineering, clustering, PCA, and validation, is automated for each page.
