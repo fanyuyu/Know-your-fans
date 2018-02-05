@@ -13,12 +13,7 @@ import matplotlib as mpl
 get_ipython().magic(u'matplotlib inline')
 from matplotlib_venn import venn3, venn3_circles
 import seaborn as sns
-sns.set() 
-from scipy import linalg
-import plotly.offline as py
-py.init_notebook_mode(connected=True)
-import plotly.graph_objs as go
-import plotly.tools as tls
+sns.set()
 
 
 def kmeans_elbow(df, max_cluster):
